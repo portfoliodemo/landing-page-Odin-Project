@@ -9,9 +9,86 @@ html {
     box-sizing: inherit;
 }
 
+:root {
+    --hero-and-footer-bgcolor: #1F2937;
+}
+
+body {  
+    margin: 0;
+}
+
+header {
+    background-color: var(--hero-and-footer-bgcolor);
+    padding: 1em 4em;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.home-logo {
+    font-size: 24px;
+    color: #F9FAF8;
+    font-weight: bold;
+}
+
 ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
     margin: 0;
     padding: 0;
     list-style-type: none;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.links li a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.hero-splash {
+    display: flex;
+    padding: 2em 4em;
+}
+
+.hero-splash h1 {
+    margin: 0;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    width: 20%;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+    width: 50%;
+}
+
+figure img {
+    max-width: 100%;
+    display: block;
+}
+
+footer {
+    background-color: var(--hero-and-footer-bgcolor);
+    text-align: center;
+}
