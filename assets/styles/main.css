@@ -19,7 +19,7 @@ body {
 
 header {
     background-color: var(--hero-and-footer-bgcolor);
-    padding: 1em 4em;
+    padding: 1em 6em 3em 6em;
 }
 
 nav {
@@ -37,7 +37,7 @@ nav {
 ul {
     display: flex;
     justify-content: flex-end;
-    gap: 8px;
+    gap: 16px;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -48,18 +48,23 @@ a {
     color: white;
 }
 
-.links li a {
+.links li a, .hero-text p {
     font-size: 18px;
     color: #E5E7EB;
 }
 
 .hero-splash {
     display: flex;
-    padding: 2em 4em;
+    padding: 2em 6em;
+    background-color: #1F2937;
+    gap: 2em;
 }
 
 .hero-splash h1 {
     margin: 0;
+    font-size: 48px;
+    font-weight: bolder;
+    color: #F9FAF8;
 }
 
 .hero-text {
@@ -75,20 +80,73 @@ a {
 
 button {
     width: 20%;
+    background-color: #3882F6;
+    border-radius: 8px;
+    color: white;
 }
 
-figure {
+.hero-image figure {
     margin: 0;
     padding: 0;
-    width: 50%;
+    /* width: 80%; */
 }
 
-figure img {
+.hero-image figure img {
     max-width: 100%;
     display: block;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bolder;
+    color: #1F2937;
+}
+
+.site-information {
+    padding: 2em 6em;
+}
+
+.image-carousel {
+    display: flex;
+}
+
+.image-carousel figure img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.famous-quote {
+    background-color: #E5E7EB;
+}
+
+.famous-quote figure {
+    margin: 0;
+    padding: 1em;
+}
+
+.famous-quote p {
+    font-size: 36px;
+    font-weight: lighter;
+    color: #1F2937;
+    font-style: italic;
+    padding: 1em;
+    margin: 0;
+}
+
+.famous-quote blockquote {
+    padding: 1em;
+    margin: 0;
+}
+
+.famous-quote figcaption {
+    text-align: center;
 }
 
 footer {
     background-color: var(--hero-and-footer-bgcolor);
     text-align: center;
+    color: white;
+    padding: 2em;
 }
