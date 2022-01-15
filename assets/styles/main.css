@@ -166,6 +166,37 @@ figcaption {
     text-align: center;
 }
 
+.call-to-action {
+    padding: 4em 6em;
+}
+
+.signup {
+    display: flex;
+    background-color: #3882F6;
+    color: white;   
+    padding: 1em 4em; 
+    border-radius: 16px;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+}
+
+.signup h3 {
+    margin: 0;
+}
+
+.signup p {
+    margin: 0;
+}
+
+.signup-button button {
+    font-weight: bold;
+    border-radius: 8px;
+    border-color: white;
+    border-width: medium;
+    border-style: groove;
+}
+
 footer {
     background-color: var(--hero-and-footer-bgcolor);
     text-align: center;
