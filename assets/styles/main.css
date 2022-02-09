@@ -59,11 +59,19 @@ a {
 }
 
 .hero-splash {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2em;
+    background-color: #1F2937;
+    padding: 2em 6em;
+}
+
+/* .hero-splash {
     display: flex;
     padding: 2em 6em;
     background-color: #1F2937;
     gap: 2em;
-}
+} */
 
 .hero-splash h1 {
     margin: 0;
@@ -81,16 +89,41 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
-button {
+#signup-button {
+    padding: 1em;
+    background-color: #3882F6;
+    border-radius: 8px;
+    /* border-width: thin; */
+    /* border-style: groove; */
+    color: white;
+    text-align: center; 
+    font-weight: bold;   
+    font-size: larger;
+}
+
+#signup-button:hover {
+    color: #3882F6;
+    background-color: white;
+    padding: 1em;
+    font-weight: bold;
+    border-radius: 8px;
+    /* border-width: thin; */
+    /* border-style: groove; */
+    border-color: #3882F6;
+    text-align: center;
+}
+
+/* button {
     width: 100px;
     padding: 1em;
     border: 0;
     background-color: #3882F6;
     border-radius: 8px;
     color: white;
-}
+} */
 
 .hero-image figure {
     margin: 0;
@@ -112,8 +145,12 @@ h2 {
     color: #1F2937;
 }
 
-.site-information, .famous-quote {
-    padding: 2em 6em;
+.site-information {
+    padding: 2em 4em;
+}
+
+.famous-quote {
+    padding: 2em 4em;
 }
 
 .image-carousel {
@@ -129,6 +166,10 @@ h2 {
     max-width: 100%;
     border-radius: 8px;
     margin: 0;
+}
+
+.image-carousel figcaption {
+    padding: 0.5em;
 }
 
 .famous-quote {
@@ -174,7 +215,7 @@ figcaption {
     display: flex;
     background-color: #3882F6;
     color: white;   
-    padding: 1em 4em; 
+    padding: 4em 4em; 
     border-radius: 16px;
     justify-content: space-between;
     align-items: center;
@@ -189,13 +230,44 @@ figcaption {
     margin: 0;
 }
 
-.signup-button button {
+/* .signup-button button {
     font-weight: bold;
     border-radius: 8px;
     border-color: white;
     border-width: medium;
     border-style: groove;
+} */
+
+#odin-signup-button {
+    display: flex;
+    padding: 1em;
+    font-weight: bold;
+    border-radius: 8px;
+    border-width: medium;
+    border-style: groove;
+    border-color: white;
+    /* Border shorthand: width style color */
+    /* border: medium groove white */
 }
+
+#odin-signup-button:hover {
+    color: #3882F6;
+    background-color: white;
+    padding: 1em;
+    font-weight: bold;
+    border-radius: 8px;
+    border-width: medium;
+    border-style: groove;
+    border-color: #3882F6;
+}
+
+/* #odin-signup-button a {
+    font-weight: bold;
+    border-radius: 8px;
+    border-width: medium;
+    border-style: groove;
+    border-color: white;
+} */
 
 footer {
     background-color: var(--hero-and-footer-bgcolor);
@@ -204,9 +276,25 @@ footer {
     padding: 2em;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
+    .hero-splash {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+        background-color: #1F2937;
+        padding: 2em 6em;
+    }
+}
 
+@media (max-width: 850px) {
     .image-carousel {
         flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .signup {
+        flex-direction: column;
+        gap: 2em;
     }
 }
